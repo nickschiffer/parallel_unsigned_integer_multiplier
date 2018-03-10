@@ -24,7 +24,7 @@ module CLA_adder_4bit(
 input [3:0] A,
 input [3:0] B,
 input c_in,
-output [3:0] SUM,
+output reg [3:0] SUM,
 output reg c_out
 );
 

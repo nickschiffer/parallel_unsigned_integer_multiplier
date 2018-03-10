@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Nickolas Schiffer
 // 
 // Create Date: 03/09/2018 04:25:30 PM
 // Design Name: 
@@ -23,11 +23,13 @@
 module AND5(
 input [3:0] A,
 input b_j,
-output reg PP_j
-    );
+output reg [7:0] PP_j
+);
+
+
     
 always @ (*)
 begin
-   PP_j <= (&A) & b_j; 
+   PP_j <= A & b_j; 
 end
 endmodule

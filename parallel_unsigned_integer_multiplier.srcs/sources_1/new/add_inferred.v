@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: Nickolas Schiffer
+// Engineer: 
 // 
-// Create Date: 03/09/2018 04:29:45 PM
+// Create Date: 03/03/2018 04:55:04 PM
 // Design Name: 
-// Module Name: unsigned_integer_multiplier_inferred
+// Module Name: add_inferred
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module unsigned_integer_multiplier_inferred(
-input [3:0] A,
-input [3:0] B,
-output reg [7:0] P
-    );
+module add_inferred(
+input [7:0] A, B,
+input c_in,
+output reg [7:0] SUM,
+output reg c_out
+);
 always @ (*)
-    P <= A * B;
+        {c_out,SUM} = {1'b0,A} + {1'b0,B} + {1'b0,c_in};
 endmodule

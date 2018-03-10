@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar  9 15:48:51 2018
+# Process ID: 2080
+# Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8040 C:\Users\Nick Schiffer\Documents\School\CMPE125\Labs\parallel_unsigned_integer_multiplier\parallel_unsigned_integer_multiplier.xpr
+# Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/vivado.log
+# Journal file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.xpr}
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new
+file mkdir {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new}
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flop.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flop.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flop.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flop.v}}
+file delete -force {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flop.v}
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flopr.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flopr.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flopr.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flopr.v}}
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/flopenr.v}}
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLA_top.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/my_xor.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLAgen_4bit.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/add_half.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLA_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLA_top.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLAgen_4bit.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/add_half.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLAgen_4bit.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/add_half.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/my_xor.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/my_xor.v}}
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/add_half.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_top.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLAgen_4bit.v} {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/my_xor.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/AND5.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/AND5.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/unsigned_integer_multiplier_inferred.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/unsigned_integer_multiplier_inferred.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new
+file mkdir {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new}
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/UIM_inferred_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/UIM_inferred_tb.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source CLA_adder_4bit.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top UIM_inferred_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source UIM_inferred_tb.tcl
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/combinational_unsigned_integer_multiplier.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/combinational_unsigned_integer_multiplier.v}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top combinational_unsigned_integer_multiplier [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/bit_shifter_rotator.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v} w ]
+add_files {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CLA_adder_8bit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_file {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v} [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sim_1/new/cla_adder_tb.v}}
+update_compile_order -fileset sim_1
+add_files -norecurse {{C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/add_inferred.v}}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top cla_adder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+close_sim
