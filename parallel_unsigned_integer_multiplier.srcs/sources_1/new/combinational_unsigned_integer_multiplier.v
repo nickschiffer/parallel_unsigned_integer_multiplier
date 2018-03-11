@@ -23,14 +23,14 @@
 module combinational_unsigned_integer_multiplier(
 input  [3:0] A,
 input  [3:0] B,
-output reg [7:0] P,
+output reg [7:0] P, //Product
 output reg overflow
 );
 
-wire [7:0] pp_from_AND0;
-wire [7:0] pp_from_AND1;
-wire [7:0] pp_from_AND2;
-wire [7:0] pp_from_AND3;
+wire [7:0] PP_from_AND0;
+wire [7:0] PP_from_AND1;
+wire [7:0] PP_from_AND2;
+wire [7:0] PP_from_AND3;
 
 wire [7:0] PP0;
 wire [7:0] PP1;
@@ -47,15 +47,15 @@ wire carry_from_PP2_plus_PP3;
 
 
 
-AND5 AND0 (A, B[0], pp_from_AND0);
-AND5 AND1 (A, B[1], pp_from_AND1);
-AND5 AND2 (A, B[2], pp_from_AND2);
-AND5 AND3 (A, B[3], pp_from_AND3);
+AND5 AND0 (A, B[0], PP_from_AND0); //Pre-shifted PP0
+AND5 AND1 (A, B[1], PP_from_AND1); //Pre-shifted PP1
+AND5 AND2 (A, B[2], PP_from_AND2); //Pre-shifted PP2
+AND5 AND3 (A, B[3], PP_from_AND3); //Pre-shifted PP3
 
-bit_shifter_rotator SHIFT0 (2'b000, pp_from_AND0, PP0); //Shift Result by 0
-bit_shifter_rotator SHIFT1 (2'b001, pp_from_AND1, PP1); //Shift Result by 1
-bit_shifter_rotator SHIFT2 (2'b010, pp_from_AND2, PP2); //Shift Result by 2
-bit_shifter_rotator SHIFT3 (2'b011, pp_from_AND3, PP3); //Shift Result by 3
+bit_shifter_rotator SHIFT0 (2'b000, PP_from_AND0, PP0); //Shift Result by 0
+bit_shifter_rotator SHIFT1 (2'b001, PP_from_AND1, PP1); //Shift Result by 1
+bit_shifter_rotator SHIFT2 (2'b010, PP_from_AND2, PP2); //Shift Result by 2
+bit_shifter_rotator SHIFT3 (2'b011, PP_from_AND3, PP3); //Shift Result by 3
 
 CLA_adder_8bit ADD_PP0_PP1 (
     .A(PP0), 

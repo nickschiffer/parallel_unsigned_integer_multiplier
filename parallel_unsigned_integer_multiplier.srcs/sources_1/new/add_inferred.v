@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Nickolas Schiffer
 // 
 // Create Date: 03/03/2018 04:55:04 PM
 // Design Name: 

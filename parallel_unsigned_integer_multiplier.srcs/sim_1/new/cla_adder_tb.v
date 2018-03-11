@@ -43,10 +43,10 @@ integer count = 0;
     initial
     begin
         $display("CLA Test Begin");
-            for(i = 0; i < 512; i = i + 1)   //2^(9) = 512 combinations
+            for(i = 0; i < 512; i = i + 1)     //2^(9) = 512 combinations
             begin
                 in_A_tb = i;
-                for(j = 0; j < 256; j = j + 1)
+                for(j = 0; j < 256; j = j + 1) //2^(8) = 256 combinations
                 begin
                     in_B_tb = j; #5
                     
