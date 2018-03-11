@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,10 +30,14 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLAgen_4bit.v}
-  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/add_half.v}
-  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/my_xor.v}
-  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/cla_adder_7seg/cla_adder_7seg.srcs/sources_1/new/CLA_top.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/AND5.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_top.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLAgen_4bit.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/add_half.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/bit_shifter_rotator.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/my_xor.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/combinational_unsigned_integer_multiplier.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -42,10 +48,10 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 
-synth_design -top CLA_top -part xc7a100tcsg324-1
+synth_design -top combinational_unsigned_integer_multiplier -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef CLA_top.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file CLA_top_utilization_synth.rpt -pb CLA_top_utilization_synth.pb"
+write_checkpoint -force -noxdef combinational_unsigned_integer_multiplier.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file combinational_unsigned_integer_multiplier_utilization_synth.rpt -pb combinational_unsigned_integer_multiplier_utilization_synth.pb"

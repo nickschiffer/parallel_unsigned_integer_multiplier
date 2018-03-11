@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cla_adder_tb;
+module cla_adder_8bit_tb;
 
 parameter A_width = 8, B_width = 8, S_width = 8;
 

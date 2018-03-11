@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Mar  9 16:07:48 2018
-# Process ID: 10004
+# Start of session at: Fri Mar  9 19:49:41 2018
+# Process ID: 3960
 # Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1
-# Command line: vivado.exe -log CLA_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLA_top.tcl
-# Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1/CLA_top.vds
+# Command line: vivado.exe -log combinational_unsigned_integer_multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combinational_unsigned_integer_multiplier.tcl
+# Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1/combinational_unsigned_integer_multiplier.vds
 # Journal file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source CLA_top.tcl -notrace
+source combinational_unsigned_integer_multiplier.tcl -notrace

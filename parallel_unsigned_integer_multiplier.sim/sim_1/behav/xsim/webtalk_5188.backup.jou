@@ -2,10 +2,10 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Mar 10 21:37:13 2018
-# Process ID: 2448
+# Start of session at: Sat Mar 10 21:32:12 2018
+# Process ID: 5188
 # Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.sim/sim_1/behav/xsim/xsim.dir/cla_adder_8bit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.sim/sim_1/behav/xsim/xsim.dir/cla_adder_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
