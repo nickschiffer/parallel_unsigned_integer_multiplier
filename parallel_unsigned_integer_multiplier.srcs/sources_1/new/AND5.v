@@ -30,6 +30,6 @@ output reg [7:0] PP_j
     
 always @ (*)
 begin
-   PP_j <= A & b_j; 
+   PP_j <= {A[3] & b_j, A[2] & b_j, A[1] & b_j, A[0] & b_j};
 end
 endmodule
