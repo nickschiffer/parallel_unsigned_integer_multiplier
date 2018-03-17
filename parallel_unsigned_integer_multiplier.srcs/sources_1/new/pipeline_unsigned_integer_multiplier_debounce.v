@@ -22,7 +22,7 @@
 
 module pipeline_unsigned_integer_multiplier_debounce(
 
-input clk, button, debounced_button,
+input clk, button,
 input  [3:0] A,
 input  [3:0] B,
 output [7:0] P, //Product
@@ -30,9 +30,13 @@ output reg overflow
 
 );
 
+wire debounced_button;
+
 wire [4:0] B_from_IN_REG;
 wire [4:0] A_from_IN_REG;
 wire [7:0] P_from_OUT_REG;
+
+
 
 wire [7:0] PP0_plus_PP1_AFTER_REG;
 wire [7:0] PP2_plus_PP3_AFTER_REG;
