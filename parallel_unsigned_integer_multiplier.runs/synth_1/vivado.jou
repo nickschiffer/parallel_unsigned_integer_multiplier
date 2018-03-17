@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Mar 10 22:41:54 2018
-# Process ID: 12776
+# Start of session at: Fri Mar 16 20:18:59 2018
+# Process ID: 14408
 # Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1
 # Command line: vivado.exe -log combinational_unsigned_integer_multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combinational_unsigned_integer_multiplier.tcl
 # Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1/combinational_unsigned_integer_multiplier.vds
