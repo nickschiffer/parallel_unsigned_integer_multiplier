@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521268566">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521268566">
+  <File Type="PWROPT-DCP" Name="pipeline_IUM_FPGA_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="pipeline_IUM_FPGA_power_routed.rpt"/>
   <File Type="PA-TCL" Name="pipeline_IUM_FPGA.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="pipeline_IUM_FPGA_drc_synth.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="pipeline_IUM_FPGA_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="pipeline_IUM_FPGA_reports.tcl"/>
-  <File Type="RDS-RDS" Name="pipeline_IUM_FPGA.vds"/>
-  <File Type="RDS-UTIL" Name="pipeline_IUM_FPGA_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="pipeline_IUM_FPGA_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="pipeline_IUM_FPGA.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="pipeline_IUM_FPGA_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="pipeline_IUM_FPGA_timing_summary_synth.pb"/>
+  <File Type="BG-DRC" Name="pipeline_IUM_FPGA.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pipeline_IUM_FPGA_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="pipeline_IUM_FPGA.hwdef"/>
+  <File Type="OPT-DCP" Name="pipeline_IUM_FPGA_opt.dcp"/>
+  <File Type="OPT-DRC" Name="pipeline_IUM_FPGA_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pipeline_IUM_FPGA_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="pipeline_IUM_FPGA_placed.dcp"/>
+  <File Type="PLACE-IO" Name="pipeline_IUM_FPGA_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pipeline_IUM_FPGA_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="pipeline_IUM_FPGA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pipeline_IUM_FPGA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="pipeline_IUM_FPGA_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pipeline_IUM_FPGA_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pipeline_IUM_FPGA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="pipeline_IUM_FPGA_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pipeline_IUM_FPGA_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pipeline_IUM_FPGA_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pipeline_IUM_FPGA_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="pipeline_IUM_FPGA.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pipeline_IUM_FPGA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="pipeline_IUM_FPGA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pipeline_IUM_FPGA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="pipeline_IUM_FPGA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pipeline_IUM_FPGA_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="pipeline_IUM_FPGA.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="pipeline_IUM_FPGA_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="pipeline_IUM_FPGA.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pipeline_IUM_FPGA_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="pipeline_IUM_FPGA.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pipeline_IUM_FPGA_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="pipeline_IUM_FPGA.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pipeline_IUM_FPGA_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="pipeline_IUM_FPGA_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="pipeline_IUM_FPGA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pipeline_IUM_FPGA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pipeline_IUM_FPGA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pipeline_IUM_FPGA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pipeline_IUM_FPGA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="pipeline_IUM_FPGA_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="pipeline_IUM_FPGA.vdi"/>
+  <File Type="ROUTE-CLK" Name="pipeline_IUM_FPGA_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pipeline_IUM_FPGA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pipeline_IUM_FPGA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pipeline_IUM_FPGA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pipeline_IUM_FPGA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pipeline_IUM_FPGA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="pipeline_IUM_FPGA.nky"/>
+  <File Type="BITSTR-BMM" Name="pipeline_IUM_FPGA_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="pipeline_IUM_FPGA.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="pipeline_IUM_FPGA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="pipeline_IUM_FPGA.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/AND5.v">
@@ -166,7 +220,15 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
   </Strategy>
 </GenRun>

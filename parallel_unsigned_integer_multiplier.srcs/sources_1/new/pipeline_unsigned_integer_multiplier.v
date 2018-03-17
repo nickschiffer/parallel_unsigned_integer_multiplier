@@ -25,9 +25,7 @@ module pipeline_unsigned_integer_multiplier(
 input clk,
 input  [3:0] A,
 input  [3:0] B,
-output [7:0] P, //Product
-output reg overflow
-
+output [7:0] P //Product
 );
 
 wire [4:0] B_from_IN_REG;

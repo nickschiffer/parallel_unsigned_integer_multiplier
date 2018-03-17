@@ -6,4 +6,4 @@ REM          to be invoked for Vivado to track run status.
 REM Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 REM
 
-vivado -log pipeline_IUM_FPGA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_IUM_FPGA.tcl
+vivado -log pipeline_IUM_FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pipeline_IUM_FPGA.tcl -notrace
