@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521268566">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521275111">
   <File Type="PA-TCL" Name="pipeline_IUM_FPGA.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="pipeline_IUM_FPGA_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="pipeline_IUM_FPGA_reports.tcl"/>
@@ -33,6 +33,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/CLAgen_4bit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/P_2_BCD.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -102,15 +109,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/sum_to_bcd.v">
+    <File Path="$PSRCDIR/sources_1/new/pipeline_IUM_FPGA.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/pipeline_IUM_FPGA.v">
+    <File Path="$PSRCDIR/sources_1/new/sum_to_bcd.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

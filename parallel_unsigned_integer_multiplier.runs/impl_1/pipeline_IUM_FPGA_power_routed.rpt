@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Fri Mar 16 23:38:19 2018
+| Date             : Sat Mar 17 01:27:31 2018
 | Host             : DESKTOP-7NB8043 running 64-bit major release  (build 9200)
 | Command          : report_power -file pipeline_IUM_FPGA_power_routed.rpt -pb pipeline_IUM_FPGA_power_summary_routed.pb -rpx pipeline_IUM_FPGA_power_routed.rpx
 | Design           : pipeline_IUM_FPGA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.130        |
+| Total On-Chip Power (W)  | 0.127        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.033        |
+| Dynamic (W)              | 0.030        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       78 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       21 |     63400 |            0.03 |
+| Slice Logic    |    <0.001 |      121 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       36 |     63400 |            0.06 |
 |   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
-|   Register     |    <0.001 |       36 |    126800 |            0.03 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |    <0.001 |       74 |       --- |             --- |
-| I/O            |     0.031 |       36 |       210 |           17.14 |
+|   Register     |    <0.001 |       53 |    126800 |            0.04 |
+|   Others       |     0.000 |        7 |       --- |             --- |
+| Signals        |    <0.001 |      113 |       --- |             --- |
+| I/O            |     0.028 |       36 |       210 |           17.14 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.130 |          |           |                 |
+| Total          |     0.127 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
+| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.013 |       0.009 |      0.004 |
+| Vcco33    |       3.300 |     0.012 |       0.008 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -94,7 +94,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -140,8 +140,9 @@ Table of Contents
 +-------------------+-----------+
 | Name              | Power (W) |
 +-------------------+-----------+
-| pipeline_IUM_FPGA |     0.033 |
+| pipeline_IUM_FPGA |     0.030 |
 |   CLK             |    <0.001 |
+|   DBNC            |     0.000 |
 |   LED             |    <0.001 |
 +-------------------+-----------+
 

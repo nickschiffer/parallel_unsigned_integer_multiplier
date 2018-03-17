@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -34,6 +35,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_adder_8bit.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLA_top.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/CLAgen_4bit.v}
+  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/P_2_BCD.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/add_half.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/bcd_to_7seg.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/bit_shifter_rotator.v}
@@ -43,7 +45,6 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/led_mux.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/my_xor.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/pipeline_unsigned_integer_multiplier.v}
-  {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/sum_to_bcd.v}
   {C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/pipeline_IUM_FPGA.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being

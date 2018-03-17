@@ -48,7 +48,7 @@ wire [7:0] PP3;
 wire [7:0] PP0_plus_PP1;
 wire [7:0] PP2_plus_PP3;
 wire [7:0] P_final;
-wire overflow_final;
+
 
 wire carry_from_PP0_plus_PP1;
 wire carry_from_PP2_plus_PP3;
@@ -111,8 +111,7 @@ CLA_adder_8bit ADD_TOTAL (
     .A(PP0_plus_PP1_AFTER_REG), 
     .B(PP2_plus_PP3_AFTER_REG), 
     .c_in(1'b0), 
-    .SUM(P_from_OUT_REG), 
-    .c_out(overflow_final));
+    .SUM(P_from_OUT_REG));
 
 //always @ (*)
 //begin
