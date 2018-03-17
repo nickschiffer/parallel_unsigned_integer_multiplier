@@ -1,65 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1520750550">
-  <File Type="PWROPT-DCP" Name="combinational_unsigned_integer_multiplier_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="combinational_unsigned_integer_multiplier_power_routed.rpt"/>
   <File Type="PA-TCL" Name="combinational_unsigned_integer_multiplier.tcl"/>
+  <File Type="PWROPT-DCP" Name="combinational_unsigned_integer_multiplier_pwropt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="combinational_unsigned_integer_multiplier_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="combinational_unsigned_integer_multiplier_reports.tcl"/>
   <File Type="BG-DRC" Name="combinational_unsigned_integer_multiplier.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="combinational_unsigned_integer_multiplier_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_init.rpt"/>
   <File Type="OPT-HWDEF" Name="combinational_unsigned_integer_multiplier.hwdef"/>
   <File Type="OPT-DCP" Name="combinational_unsigned_integer_multiplier_opt.dcp"/>
-  <File Type="OPT-DRC" Name="combinational_unsigned_integer_multiplier_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="combinational_unsigned_integer_multiplier_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="combinational_unsigned_integer_multiplier_placed.dcp"/>
   <File Type="PLACE-IO" Name="combinational_unsigned_integer_multiplier_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="combinational_unsigned_integer_multiplier_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="combinational_unsigned_integer_multiplier_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="combinational_unsigned_integer_multiplier_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="combinational_unsigned_integer_multiplier_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="combinational_unsigned_integer_multiplier_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="combinational_unsigned_integer_multiplier_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="combinational_unsigned_integer_multiplier_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="combinational_unsigned_integer_multiplier_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="combinational_unsigned_integer_multiplier_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="combinational_unsigned_integer_multiplier.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="combinational_unsigned_integer_multiplier_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="combinational_unsigned_integer_multiplier_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="combinational_unsigned_integer_multiplier_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="combinational_unsigned_integer_multiplier_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="combinational_unsigned_integer_multiplier_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="combinational_unsigned_integer_multiplier.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="combinational_unsigned_integer_multiplier_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="combinational_unsigned_integer_multiplier.bgn"/>
+  <File Type="BITSTR-MSK" Name="combinational_unsigned_integer_multiplier.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="combinational_unsigned_integer_multiplier_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="combinational_unsigned_integer_multiplier.rbt"/>
+  <File Type="BG-BGN" Name="combinational_unsigned_integer_multiplier.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="combinational_unsigned_integer_multiplier_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="combinational_unsigned_integer_multiplier.bin"/>
+  <File Type="BITSTR-RBT" Name="combinational_unsigned_integer_multiplier.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="combinational_unsigned_integer_multiplier_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="combinational_unsigned_integer_multiplier.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="combinational_unsigned_integer_multiplier_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="combinational_unsigned_integer_multiplier_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="combinational_unsigned_integer_multiplier_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="combinational_unsigned_integer_multiplier_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="combinational_unsigned_integer_multiplier_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="combinational_unsigned_integer_multiplier_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="combinational_unsigned_integer_multiplier_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="combinational_unsigned_integer_multiplier.vdi"/>
   <File Type="ROUTE-CLK" Name="combinational_unsigned_integer_multiplier_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="combinational_unsigned_integer_multiplier.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="combinational_unsigned_integer_multiplier_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="combinational_unsigned_integer_multiplier_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="combinational_unsigned_integer_multiplier_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="combinational_unsigned_integer_multiplier_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="combinational_unsigned_integer_multiplier_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="combinational_unsigned_integer_multiplier.nky"/>
   <File Type="BITSTR-BMM" Name="combinational_unsigned_integer_multiplier_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="combinational_unsigned_integer_multiplier.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="combinational_unsigned_integer_multiplier.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="combinational_unsigned_integer_multiplier.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
