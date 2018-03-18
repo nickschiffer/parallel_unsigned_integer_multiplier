@@ -26,8 +26,8 @@ input [3:0] A, B,
 input button,
 output [7:0] LEDSEL, LEDOUT,
 output button_indicator,
-//output [3:0] A_out, B_out,
-output [7:0] P_out
+output [3:0] A_out, B_out
+//output [7:0] P_out
 );
 
 supply1 [7:0] vcc;
@@ -73,8 +73,8 @@ led_mux LED (clk_5KHz, rst, LED6, LED5, LED4, LED3, vcc, LED2, LED1, LED0, LEDSE
 clk_gen      CLK        (clk100MHz, rst, DONT_USE, clk_5KHz);
 
 assign button_indicator = debounced_button;
-//assign A_out = A;
-//assign B_out = B;
-assign P_out = P;
+assign A_out = A;
+assign B_out = B;
+//assign P_out = P;
 
 endmodule

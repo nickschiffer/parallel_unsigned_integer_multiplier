@@ -16,7 +16,7 @@
 
     #Buttons
         set_property -dict {PACKAGE_PIN M18  IOSTANDARD LVCMOS33} [get_ports {button}];
-        set_property -dict {PACKAGE_PIN V11  IOSTANDARD LVCMOS33} [get_ports {button_indicator}];
+        set_property -dict {PACKAGE_PIN V16  IOSTANDARD LVCMOS33} [get_ports {button_indicator}];
         set_property -dict {PACKAGE_PIN N17  IOSTANDARD LVCMOS33} [get_ports {rst}];
 
 
@@ -41,23 +41,23 @@
         set_property -dict {PACKAGE_PIN U13 IOSTANDARD LVCMOS33} [get_ports {LEDSEL[7]}];
     #Inputs out
         #A
-#            set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports {A_out[0]}]; 
-#            set_property -dict {PACKAGE_PIN V14 IOSTANDARD LVCMOS33} [get_ports {A_out[1]}];
-#            set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports {A_out[2]}];
-#            set_property -dict {PACKAGE_PIN V11 IOSTANDARD LVCMOS33} [get_ports {A_out[3]}];
+            set_property -dict {PACKAGE_PIN V15 IOSTANDARD LVCMOS33} [get_ports {A_out[0]}]; 
+            set_property -dict {PACKAGE_PIN V14 IOSTANDARD LVCMOS33} [get_ports {A_out[1]}];
+            set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports {A_out[2]}];
+            set_property -dict {PACKAGE_PIN V11 IOSTANDARD LVCMOS33} [get_ports {A_out[3]}];
         #B
-#            set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports {B_out[0]}];
-#            set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports {B_out[1]}];
-#            set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {B_out[2]}]; 
-#            set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports {B_out[3]}]; 
+            set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports {B_out[0]}];
+            set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports {B_out[1]}];
+            set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {B_out[2]}]; 
+            set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports {B_out[3]}]; 
         #P (for debugging)
-            set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports {P_out[0]}]; 
-            set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33} [get_ports {P_out[1]}];
-            set_property -dict {PACKAGE_PIN U17 IOSTANDARD LVCMOS33} [get_ports {P_out[2]}];
-            set_property -dict {PACKAGE_PIN U16 IOSTANDARD LVCMOS33} [get_ports {P_out[3]}];
+#            set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports {P_out[0]}]; 
+#            set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33} [get_ports {P_out[1]}];
+#            set_property -dict {PACKAGE_PIN U17 IOSTANDARD LVCMOS33} [get_ports {P_out[2]}];
+#            set_property -dict {PACKAGE_PIN U16 IOSTANDARD LVCMOS33} [get_ports {P_out[3]}];
             
             
-            set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports {P_out[4]}]; 
-            set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports {P_out[5]}];
-            set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports {P_out[6]}];
-            set_property -dict {PACKAGE_PIN T16 IOSTANDARD LVCMOS33} [get_ports {P_out[7]}];
+#            set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports {P_out[4]}]; 
+#            set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports {P_out[5]}];
+#            set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports {P_out[6]}];
+#            set_property -dict {PACKAGE_PIN T16 IOSTANDARD LVCMOS33} [get_ports {P_out[7]}];

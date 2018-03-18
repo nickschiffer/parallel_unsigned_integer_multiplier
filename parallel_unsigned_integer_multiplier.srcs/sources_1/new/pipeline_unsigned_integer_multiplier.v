@@ -25,7 +25,7 @@ module pipeline_unsigned_integer_multiplier(
 input clk,
 input  [3:0] A,
 input  [3:0] B,
-output reg [7:0] P //Product
+output [7:0] P //Product
 );
 
 wire [4:0] B_from_IN_REG;
@@ -113,14 +113,14 @@ CLA_adder_8bit ADD_TOTAL (
     .c_in(1'b0), 
     .SUM(P_final));
 
-always @ (*)
-begin
-//P <= P_final;
-P <= P_from_OUT_REG;
-//overflow <= overflow_final;
-end
+//always @ (*)
+//begin
+////P <= P_final;
+//P <= P_from_OUT_REG;
+////overflow <= overflow_final;
+//end
 
-//assign P = P_from_OUT_REG;
+assign P = P_from_OUT_REG;
 
 
 

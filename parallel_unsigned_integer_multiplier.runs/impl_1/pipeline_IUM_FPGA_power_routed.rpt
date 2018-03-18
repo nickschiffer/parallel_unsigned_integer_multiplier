@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun Mar 18 12:07:38 2018
+| Date             : Sun Mar 18 12:21:08 2018
 | Host             : DESKTOP-7NB8043 running 64-bit major release  (build 9200)
 | Command          : report_power -file pipeline_IUM_FPGA_power_routed.rpt -pb pipeline_IUM_FPGA_power_summary_routed.pb -rpx pipeline_IUM_FPGA_power_routed.rpx
 | Design           : pipeline_IUM_FPGA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.127        |
+| Total On-Chip Power (W)  | 0.133        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.030        |
+| Dynamic (W)              | 0.036        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -53,17 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      228 |       --- |             --- |
+| Slice Logic    |    <0.001 |      219 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       86 |     63400 |            0.14 |
 |   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
-|   Register     |    <0.001 |       90 |    126800 |            0.07 |
+|   Register     |    <0.001 |       82 |    126800 |            0.06 |
 |   F7/F8 Muxes  |    <0.001 |       11 |     63400 |            0.02 |
 |   Others       |     0.000 |       16 |       --- |             --- |
-|   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |    <0.001 |      179 |       --- |             --- |
-| I/O            |     0.028 |       36 |       210 |           17.14 |
+| Signals        |    <0.001 |      164 |       --- |             --- |
+| I/O            |     0.034 |       36 |       210 |           17.14 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.127 |          |           |                 |
+| Total          |     0.133 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.012 |       0.008 |      0.004 |
+| Vcco33    |       3.300 |     0.014 |       0.010 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,7 +141,7 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| pipeline_IUM_FPGA          |     0.030 |
+| pipeline_IUM_FPGA          |     0.036 |
 |   CLK                      |    <0.001 |
 |   DBNC                     |     0.000 |
 |   LED                      |    <0.001 |
