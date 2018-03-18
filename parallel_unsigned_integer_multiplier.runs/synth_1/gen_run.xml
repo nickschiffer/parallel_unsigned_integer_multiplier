@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521256737">
-  <File Type="PA-TCL" Name="combinational_unsigned_integer_multiplier.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="combinational_unsigned_integer_multiplier_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="combinational_unsigned_integer_multiplier_reports.tcl"/>
-  <File Type="RDS-RDS" Name="combinational_unsigned_integer_multiplier.vds"/>
-  <File Type="RDS-UTIL" Name="combinational_unsigned_integer_multiplier_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="combinational_unsigned_integer_multiplier_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="combinational_unsigned_integer_multiplier.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="combinational_unsigned_integer_multiplier_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="combinational_unsigned_integer_multiplier_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1521400725">
+  <File Type="PA-TCL" Name="pipeline_IUM_FPGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="pipeline_IUM_FPGA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="pipeline_IUM_FPGA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pipeline_IUM_FPGA.vds"/>
+  <File Type="RDS-UTIL" Name="pipeline_IUM_FPGA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pipeline_IUM_FPGA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pipeline_IUM_FPGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pipeline_IUM_FPGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pipeline_IUM_FPGA_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/AND5.v">
@@ -39,7 +39,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/P_2_BCD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/add_half.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bcd_to_7seg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -53,14 +67,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/my_xor.v">
+    <File Path="$PSRCDIR/sources_1/new/clk_gen.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/combinational_unsigned_integer_multiplier.v">
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -68,6 +82,49 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/flopenr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/led_mux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/my_xor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pipeline_unsigned_integer_multiplier.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pipeline_IUM_FPGA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sum_to_bcd.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/combinational_unsigned_integer_multiplier.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -91,15 +148,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/pipeline_unsigned_integer_multiplier.v">
+    <File Path="$PSRCDIR/sources_1/new/pipeline_unsigned_integer_multiplier_debounce.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -109,11 +158,17 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="combinational_unsigned_integer_multiplier"/>
+      <Option Name="TopModule" Val="pipeline_IUM_FPGA"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/UIM_pipeline_FPGA.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

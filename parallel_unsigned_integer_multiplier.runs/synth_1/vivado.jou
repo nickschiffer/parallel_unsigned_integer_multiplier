@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Mar 16 20:18:59 2018
-# Process ID: 14408
+# Start of session at: Sun Mar 18 12:18:48 2018
+# Process ID: 5440
 # Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1
-# Command line: vivado.exe -log combinational_unsigned_integer_multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combinational_unsigned_integer_multiplier.tcl
-# Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1/combinational_unsigned_integer_multiplier.vds
+# Command line: vivado.exe -log pipeline_IUM_FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pipeline_IUM_FPGA.tcl
+# Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1/pipeline_IUM_FPGA.vds
 # Journal file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source combinational_unsigned_integer_multiplier.tcl -notrace
+source pipeline_IUM_FPGA.tcl -notrace
