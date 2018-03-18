@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Mar 17 01:26:12 2018
-# Process ID: 4204
+# Start of session at: Sun Mar 18 12:06:29 2018
+# Process ID: 6244
 # Current directory: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/impl_1
 # Command line: vivado.exe -log pipeline_IUM_FPGA.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pipeline_IUM_FPGA.tcl -notrace
 # Log file: C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.runs/impl_1/pipeline_IUM_FPGA.vdi

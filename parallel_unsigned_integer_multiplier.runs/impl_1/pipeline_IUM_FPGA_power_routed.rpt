@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sat Mar 17 01:27:31 2018
+| Date             : Sun Mar 18 12:07:38 2018
 | Host             : DESKTOP-7NB8043 running 64-bit major release  (build 9200)
 | Command          : report_power -file pipeline_IUM_FPGA_power_routed.rpt -pb pipeline_IUM_FPGA_power_summary_routed.pb -rpx pipeline_IUM_FPGA_power_routed.rpx
 | Design           : pipeline_IUM_FPGA
@@ -53,12 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      121 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       36 |     63400 |            0.06 |
+| Slice Logic    |    <0.001 |      228 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       86 |     63400 |            0.14 |
 |   CARRY4       |    <0.001 |        8 |     15850 |            0.05 |
-|   Register     |    <0.001 |       53 |    126800 |            0.04 |
-|   Others       |     0.000 |        7 |       --- |             --- |
-| Signals        |    <0.001 |      113 |       --- |             --- |
+|   Register     |    <0.001 |       90 |    126800 |            0.07 |
+|   F7/F8 Muxes  |    <0.001 |       11 |     63400 |            0.02 |
+|   Others       |     0.000 |       16 |       --- |             --- |
+|   BUFG         |     0.000 |        1 |        32 |            3.13 |
+| Signals        |    <0.001 |      179 |       --- |             --- |
 | I/O            |     0.028 |       36 |       210 |           17.14 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.127 |          |           |                 |
@@ -137,13 +139,26 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| pipeline_IUM_FPGA |     0.030 |
-|   CLK             |    <0.001 |
-|   DBNC            |     0.000 |
-|   LED             |    <0.001 |
-+-------------------+-----------+
++----------------------------+-----------+
+| Name                       | Power (W) |
++----------------------------+-----------+
+| pipeline_IUM_FPGA          |     0.030 |
+|   CLK                      |    <0.001 |
+|   DBNC                     |     0.000 |
+|   LED                      |    <0.001 |
+|   UIM                      |    <0.001 |
+|     ADD_PP0_PP1            |     0.000 |
+|       ADD0                 |     0.000 |
+|     ADD_PP2_PP3            |     0.000 |
+|       ADD1                 |     0.000 |
+|         CLAGEN             |     0.000 |
+|     AND0                   |     0.000 |
+|     AND2                   |     0.000 |
+|     A_IN_REG               |     0.000 |
+|     B_IN_REG               |     0.000 |
+|     P_OUT_REG              |    <0.001 |
+|     STAGE_PP0_PLUS_PP1_REG |     0.000 |
+|     STAGE_PP2_PLUS_PP3_REG |     0.000 |
++----------------------------+-----------+
 
 
