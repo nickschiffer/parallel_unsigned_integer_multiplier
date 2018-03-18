@@ -69,7 +69,7 @@
 #########
 #Journal - files
 #########
-!*.jou
+*.jou
 #########
 #Reports
 #########
@@ -84,3 +84,10 @@
 !*.elf
 !*.bmm
 !*.xmp
+
+#########
+#Unwanted Directories
+#########
+parallel_unsigned_integer_multiplier.cache/
+parallel_unsigned_integer_multiplier.runs/
+.Xil/*
