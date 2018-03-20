@@ -89,16 +89,9 @@ endtask
                             $display("B=%b=%d",in_B_tb[B_width-1:0],in_B_tb[B_width-1:0]);
                             $display("P = %b = %d", P_Pipeline_tb[P_width - 1:0],P_Pipeline_tb[P_width - 1:0]);
                             $display("clk = %b",clk); 
-                            $display("Inferred Sum=%b=%d",P_Inferred_tb[P_width - 1:0],P_Inferred_tb[P_width - 1:0]);
+                            $display("Inferred Product=%b=%d",P_Inferred_tb[P_width - 1:0],P_Inferred_tb[P_width - 1:0]);
                             $stop;
                         end
-//                        if ((P_Inferred_tb != P_combinational_tb))
-//                            begin
-//                                $display("Error at time=%dns A=%b, B=%b,",$time, in_A_tb[A_width -1:0], in_B_tb[B_width-1:0]);
-//                                $display("Inferred P=%d",P_Inferred_tb);
-//                                $display("Combinational P=%d",P_combinational_tb);
-//                                $stop;
-//                            end
                     
                 end
             end
