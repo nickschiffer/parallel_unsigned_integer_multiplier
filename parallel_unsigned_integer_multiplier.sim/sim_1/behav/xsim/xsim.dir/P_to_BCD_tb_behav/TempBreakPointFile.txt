@@ -1,2 +1,0 @@
-Breakpoint File Version 1.0
-32 true C:/Users/Nick Schiffer/Documents/School/CMPE125/Labs/parallel_unsigned_integer_multiplier/parallel_unsigned_integer_multiplier.srcs/sources_1/new/sum_to_bcd.v

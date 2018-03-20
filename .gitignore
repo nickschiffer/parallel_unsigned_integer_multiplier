@@ -90,4 +90,5 @@
 #########
 parallel_unsigned_integer_multiplier.cache/
 parallel_unsigned_integer_multiplier.runs/
+parallel_unsigned_integer_multiplier.sim/
 .Xil/*
